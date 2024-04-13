@@ -1,6 +1,6 @@
 # Natours Final
 
-Welcome to Natours Final! This project is the final culmination of the Natours course, where we built a fully functional tour booking website. Whether you're a user looking to explore exciting tours or an administrator managing the platform, Natours Final provides a seamless and enjoyable experience for all.
+Welcome to Natours Final! This project is the final culmination of the Natours , where we built a fully functional tour booking website. Whether you're a user looking to explore exciting tours or an administrator managing the platform, Natours Final provides a seamless and enjoyable experience for all.
 
 ## Table of Contents
 
