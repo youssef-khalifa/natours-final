@@ -1,6 +1,4 @@
-const stripe = require('stripe')(
-  'sk_test_51P33q0029xIM4Cs3EbVbKswrQTBd3u8rZrhKxMesu7aCQRvl8Ao6uYLu96KOgvyO52Ux2zPXfuOhkSKxofyE5DDj00f3OOWaBF'
-);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const Tour = require('../models/tourModel');
 const Booking = require('../models/bookingModel');
 const catchAsynch = require('../utils/catchAsynch');
@@ -9,7 +7,7 @@ const factory = require('./handlerFactory');
 exports.getCheckoutSession = catchAsynch(async (req, res, next) => {
   // 1) Get the currently booked tour
   const tour = await Tour.findById(req.params.tourId);
-  console.log(process.env.STRIPE_SECRET_KEY);
+  
 
   // 2) Create checkout session
   const session = await stripe.checkout.sessions.create({
